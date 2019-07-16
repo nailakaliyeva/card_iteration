@@ -1,0 +1,27 @@
+.normal {
+    height: 300px;
+    /*background-color: skyblue;*/
+
+}
+
+.rotated {
+    height: 300px;
+    transform: rotate(180deg); /* rotate 180 grades */
+    /*background-color: pink;*/
+}
+
+.theCard{
+
+    border: solid;
+    border-radius: 5%;
+    background-image: url("https://image.shutterstock.com/image-vector/beautiful-face-queen-icon-600w-315462977.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.77);
+
+}
+h1{
+    font-size: 70px;
+    font-style: bold;
+}
