@@ -9,13 +9,30 @@
     transform: rotate(180deg); /* rotate 180 grades */
     /*background-color: pink;*/
 }
+.smallIcon {
+  transform: rotate(180deg); /* rotate 180 grades */
+    /*background-color: pink;*/
+    margin-top: 85%;
+    margin-left: 75%;
+}
 
 .theCard{
-
+    margin-bottom: 20px;
     border: solid;
     border-radius: 5%;
     background-image: url("https://image.shutterstock.com/image-vector/beautiful-face-queen-icon-600w-315462977.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.77);
+
+}
+.smallCard{
+    height: 150px;
+    border: solid;
+    border-radius: 5%;
+    /*background-image: url("https://image.shutterstock.com/image-vector/beautiful-face-queen-icon-600w-315462977.jpg");
+  */background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.77);
