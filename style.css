@@ -16,8 +16,8 @@
     margin: 1%;
     border: solid;
     border-radius: 5%;
-    /*background-image: url("https://image.shutterstock.com/image-vector/beautiful-face-queen-icon-600w-315462977.jpg");
-  */background-size: contain;
+    background-image: url("https://image.shutterstock.com/image-vector/heart-shape-vector-love-illustration-260nw-675945268.jpg");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.77);
@@ -37,7 +37,6 @@
     font-size: 100%;
     margin-left: 70%;
 }
-.picture{
-    text-align: center;
-    position: middle;
+.cardsInline{
+    display: flex;
 }
