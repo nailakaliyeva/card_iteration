@@ -27,26 +27,27 @@ return randomArray;
 
 };
 console.log(createRandomArray(5));
-}
-// function draw(inputValue){
-//     // let initialArray = new Array(input.value);
-//     for (i=0; i<=; i++){
-//         return (
-//             initialArray.push(cards.value[randomValue])
-//         );
-//         document.querySelector(".cardsInline").innerHTML = <div class="card">
-//                                                             <div class="top">
-//                                                                 <span class="icons"><i class="fas fa-heart"></i></span>
-//                                                                 <span class="cardValue"><h4>9</h4></span>
-//                                                             </div>
+function draw(array){
+    array.map(item =>{
+        document.querySelector(".cardsInline").innerHTML = <div class="card">
+                                                                <div class="top">
+                                                                    <span class="icons">{item.suit}</span>
+                                                                    <span class="cardValue"><h4>{item.value}</h4></span>
+                                                                </div>
 
-//                                                             <div class="bottom">
-//                                                                 <span class="icons"><i class="fas fa-heart"></i></span>
-//                                                                 <span class="cardValue"><h4>9</h4></span>
-//                                                             </div>
-//                                                     </div>
-// }
-//     }
+                                                                <div class="bottom">
+                                                                    <span class="icons">{item.suit}</span>
+                                                                    <span class="cardValue"><h4>{item.value}</h4></span>
+                                                                </div>
+                                                            </div>
+}
+    );
+    console.log(draw(createRandomArray(7)));
+        }
+}
+
+
+
 
 
 
