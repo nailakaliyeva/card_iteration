@@ -1,6 +1,6 @@
 let cards = {
     suits: ['<i class="fab fa-envira"></i>', '<i class="fab fa-canadian-maple-leaf"></i>', '<i class="fas fa-gem"></i>', '<i class="fas fa-heart"></i>'],
-    value:['2','3','4','5','6','7','8','9','10','J','Q','K','A']
+    value:['2','3','4','5','6','7','8','9','10','11','12','13','14']
 }
 let classIcons = document.querySelectorAll(".icons");
 let randomCard = Math.floor(Math.random()*4)
@@ -13,62 +13,60 @@ let randomValue = Math.floor(Math.random()*13)
 for(i=0;i<classValue.length; i++){
     classValue[i].innerHTML = cards.value[randomValue];
 }
-switch(cards.value[randomValue]){
-    case "J":
-        document.querySelector(".card").style.backgroundImage = 'url("https://cdn4.iconfinder.com/data/icons/playing-card-thinline/32/ico-jack-of-clubs-512.png")';
-        break;
-    case "Q": document.querySelector(".card").style.backgroundImage = 'url("https://image.shutterstock.com/image-vector/beautiful-face-queen-icon-600w-315462977.jpg")';
-        break;
-    case "K": document.querySelector(".card").style.backgroundImage = 'url("https://cdn3.iconfinder.com/data/icons/casino-and-gambling-icons/531/King-2-512.png")';
-        break;
-    case "A": document.querySelector(".card").style.backgroundImage = 'url("https://upload.wikimedia.org/wikipedia/commons/4/40/Brush-calligraphy-alphabet-a.jpg")';
-        break;
-    case "2": document.querySelector(".card").style.backgroundImage = 'url("https://martialartsworldnews.com/wp-content/uploads/2015/11/2.jpg")';
-        break;
-    case "3": document.querySelector(".card").style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVcs4U8rsXVELmOVYk7pk735EaJ4AEQ33p0gQW2Pq64VcgUm8e1w")';
-        break;
-    case "4": document.querySelector(".card").style.backgroundImage = 'url("https://vignette.wikia.nocookie.net/phobia/images/d/d0/4.jpg/revision/latest?cb=20161127143001")';
-        break;
-    case "5": document.querySelector(".card").style.backgroundImage = 'url("https://vignette4.wikia.nocookie.net/phobia/images/0/03/5.jpg/revision/latest?cb=20170102100251")';
-        break;
-    case "6": document.querySelector(".card").style.backgroundImage = 'url("https://blognumbers.files.wordpress.com/2010/09/6.jpg")';
-        break;
-    case "7": document.querySelector(".card").style.backgroundImage = 'url("https://vignette.wikia.nocookie.net/phobia/images/f/fe/7.jpg/revision/latest?cb=20170121103340")';
-        break;
-    case "8": document.querySelector(".card").style.backgroundImage = 'url("https://eightinc.com/wp-content/uploads/eight-logo-big.png")';
-        break;
-    case "9": document.querySelector(".card").style.backgroundImage = 'url("https://blognumbers.files.wordpress.com/2010/09/9.jpg")';
-        break;
-    case "10": document.querySelector(".card").style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxI8CqOXB9u3MctnqFpE8qLpqHK2loTGLBAx958xBiUOkRR9KY_w")';
-        break;
+
+function draw(){
+    let initialArray = new Array(input.value);
+    for (i=0; i<=initialArray.length; i++){
+        return (
+            initialArray.push(cards.value[randomValue])
+        );
+        document.querySelector(".cardsInline").innerHTML = <div class="card">
+                                                            <div class="top">
+                                                                <span class="icons"><i class="fas fa-heart"></i></span>
+                                                                <span class="cardValue"><h4>9</h4></span>
+                                                            </div>
+
+                                                            <div class="bottom">
+                                                                <span class="icons"><i class="fas fa-heart"></i></span>
+                                                                <span class="cardValue"><h4>9</h4></span>
+                                                            </div>
+                                                    </div>
+}
     }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// switch(cards.value[randomValue]){
+// case "J":
+//         document.querySelector(".card").style.backgroundImage = 'url("https://cdn4.iconfinder.com/data/icons/playing-card-thinline/32/ico-jack-of-clubs-512.png")';
+//         break;
+//     case "Q": document.querySelector(".card").style.backgroundImage = 'url("https://image.shutterstock.com/image-vector/beautiful-face-queen-icon-600w-315462977.jpg")';
+//         break;
+//     case "K": document.querySelector(".card").style.backgroundImage = 'url("https://cdn3.iconfinder.com/data/icons/casino-and-gambling-icons/531/King-2-512.png")';
+//         break;
+//     case "A": document.querySelector(".card").style.backgroundImage = 'url("https://upload.wikimedia.org/wikipedia/commons/4/40/Brush-calligraphy-alphabet-a.jpg")';
+//         break;
+//     case "2": document.querySelector(".card").style.backgroundImage = 'url("https://martialartsworldnews.com/wp-content/uploads/2015/11/2.jpg")';
+//         break;
+//     case "3": document.querySelector(".card").style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVcs4U8rsXVELmOVYk7pk735EaJ4AEQ33p0gQW2Pq64VcgUm8e1w")';
+//         break;
+//     case "4": document.querySelector(".card").style.backgroundImage = 'url("https://vignette.wikia.nocookie.net/phobia/images/d/d0/4.jpg/revision/latest?cb=20161127143001")';
+//         break;
+//     case "5": document.querySelector(".card").style.backgroundImage = 'url("https://vignette4.wikia.nocookie.net/phobia/images/0/03/5.jpg/revision/latest?cb=20170102100251")';
+//         break;
+//     case "6": document.querySelector(".card").style.backgroundImage = 'url("https://blognumbers.files.wordpress.com/2010/09/6.jpg")';
+//         break;
+//     case "7": document.querySelector(".card").style.backgroundImage = 'url("https://vignette.wikia.nocookie.net/phobia/images/f/fe/7.jpg/revision/latest?cb=20170121103340")';
+//         break;
+//     case "8": document.querySelector(".card").style.backgroundImage = 'url("https://eightinc.com/wp-content/uploads/eight-logo-big.png")';
+//         break;
+//     case "9": document.querySelector(".card").style.backgroundImage = 'url("https://blognumbers.files.wordpress.com/2010/09/9.jpg")';
+//         break;
+//     case "10": document.querySelector(".card").style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxI8CqOXB9u3MctnqFpE8qLpqHK2loTGLBAx958xBiUOkRR9KY_w")';
+//         break;
+//     }
 
 
 
